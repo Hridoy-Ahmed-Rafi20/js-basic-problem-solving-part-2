@@ -18,7 +18,7 @@ Hints:
 //  return: a object
 
 function charFrequency(str) {
-  if (typeof charFrequency !== "string") {
+  if (typeof str !== "string") {
     return "Invalid";
   }
   let obj = {};
