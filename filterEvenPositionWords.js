@@ -12,6 +12,20 @@ Hints:
   1.  split(' ') into an array of words 
   2.  Loop through the words and keep the ones where the index passes i % 2 === 0 */
 
-
 //input: a string
-//
+//output : words at the index of even number
+// return : a string
+
+function filterEvenPositionWords(sentence) {
+  let evenIndexWord = [];
+
+  let splitSentence = sentence.split(" ");
+  for (let i = 0; i < splitSentence.length; i++) {
+    if (i % 2 === 0) {
+      evenIndexWord.push(splitSentence[i]);
+    }
+  }
+  let joinedEvenWord = evenIndexWord.join(" ");
+  return joinedEvenWord;
+}
+console.log(filterEvenPositionWords("The quick brown fox jumps"));
