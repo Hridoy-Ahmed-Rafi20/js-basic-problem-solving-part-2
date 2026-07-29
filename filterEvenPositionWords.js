@@ -13,3 +13,5 @@ Hints:
   2.  Loop through the words and keep the ones where the index passes i % 2 === 0 */
 
 
+//input: a string
+//
