@@ -17,6 +17,9 @@ Hints:
 // return: a number
 
 function countVowels(str) {
+  if (typeof str !== "string") {
+    return "Invalid";
+  }
   let lowercase = str.toLowerCase();
 
   let count = 0;
