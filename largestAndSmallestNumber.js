@@ -36,8 +36,10 @@ function largestAndSmallest(numbers) {
       }
     }
   }
-  return `Largest: ${max} 
+  let maxAndMin = `Largest: ${max} 
 Smallest: ${min}`;
+
+  return maxAndMin;
 }
 
 let numbers = [45, 12, 89, 3, 67];
