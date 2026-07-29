@@ -20,9 +20,15 @@ Hints:
 // return: a number
 
 function runningTotal(ammounts) {
+  if (!Array.isArray(ammounts)) {
+    return "Invalid";
+  }
   let sum = 0;
   let arr = [];
   for (let number of ammounts) {
+    if (typeof number !== "number") {
+      return "Invalid";
+    }
     sum += number;
     arr.push(sum);
   }
