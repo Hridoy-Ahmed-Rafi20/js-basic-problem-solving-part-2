@@ -12,6 +12,9 @@ Hints:
 1.  Initialize both max and min to the first element 
 2.  Update them inside one loop as you compare each number */
 
+//input: a array of numbers
+// output: numbers
+// return : largest and lowest number
 function largestAndSmallest(numbers) {
   if (!Array.isArray(numbers)) {
     return "Invalid";
