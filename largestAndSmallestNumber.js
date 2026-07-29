@@ -13,10 +13,18 @@ Hints:
 2.  Update them inside one loop as you compare each number */
 
 function largestAndSmallest(numbers) {
+  if (!Array.isArray(numbers)) {
+    return "Invalid";
+  }
+
   let max = numbers[0];
   let min = numbers[0];
 
   for (let i = 0; i < numbers.length; i++) {
+    if (typeof numbers[i] !== "number") {
+      return "Invalid";
+    }
+
     if (numbers[i] > max) {
       max = numbers[i];
     } else {
@@ -25,9 +33,9 @@ function largestAndSmallest(numbers) {
       }
     }
   }
-  console.log("max", max);
-  console.log("min", min);
+  return `Largest: ${max} 
+Smallest: ${min}`;
 }
 
 let numbers = [45, 12, 89, 3, 67];
-largestAndSmallest(numbers);
+console.log(largestAndSmallest(numbers));
